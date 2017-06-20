@@ -1,6 +1,5 @@
 html,body {
      width: 100%;
-    height: 100%;
     font-family: 'Open Sans', sans-serif;
   margin:0;
   padding:0;
@@ -40,6 +39,21 @@ h0{
     
 }
 
+#header_m{
+    width: 84.5%;
+    height: 8%;
+    padding-top:1%;
+    padding-right:15%; 
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 30;
+    
+}
+
 #header2{
        width: 85%;
     height: 8%;
@@ -52,7 +66,6 @@ h0{
     top: 0;
     background-color: #fff;
     z-index: 30;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 
 
 }
@@ -116,9 +129,8 @@ a:hover {
 #intro {
     margin-top:6%;
     width: 70%;
-    height: 30%;
-    margin-left:17%;
-    margin-right:15%;
+    height: 45%;
+    margin-left:14%;
 }
 
 #intro2 {
@@ -127,18 +139,6 @@ a:hover {
     margin-left:15%;
     margin-right:15%;
     margin-bottom: 0%;
-}
-
-#profile {
-    vertical-align: middle;
-    float: left;
-    width: 18%;
-    height: 100%;
-    margin-top:2%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    background-image: url(profile.png);
 }
 
 #profile2 {
@@ -154,8 +154,10 @@ a:hover {
 
 #text{
     float: left;
-    width:76%;
+    width:100%;
     height:100%;
+    text-align: center;
+    
 }
 
 #text2{
@@ -168,20 +170,22 @@ a:hover {
 }
 
 #hi{
-    font-size:2.4rem;
-    line-height: 3rem;
-    font-weight:600;
+    font-size:4vw;
+    line-height: 3.5vw;
+    font-weight:500;
     margin-top:20px;
-    margin-bottom: 8px;
-    color:rgba(255,102,0,0.5);
-font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2vw;
+    color:rgba(255,102,0,1);
 
 }
 
 #introduction{
-    font-size: .85rem;
-    font-weight:300;
-    margin-bottom:20px;
+    margin-top: 5%;
+    line-height: 1.2rem;
+    margin-left: 19%;
+    text-align: left;
+    font-size: .8rem;
+    font-weight:400;
 }
 
 #introduction2{
@@ -192,57 +196,52 @@ font-family: 'Montserrat', sans-serif;
     color:rgba(255,102,0,0.7)
 }
 
-#nda{
-    font-size: .75rem;
-    font-weight:300;
-}
 
-#content {
-margin:0px;
-    width: 70%;
-    height: 110%;
-    margin-left:15%;
-    
+
+#content{
+width: 100%;
+display: flex;
+flex-direction: column;
+    align-items: center;
     
 }
 
-.contentrow{
-    margin:4%;
-    width:100%;
-    height:48%;
-    display: flex;
+#reel{
+    margin-top: 4%;
+    width:50%;display: flex;
     flex-direction: row;
-    z-index: -1;
+      
 }
 
-.cell{
-    margin:2%;
-    height:100%;
-    width:43%;
+.reelc{
+    display: block;
+    min-height:100%;
+    width:100%;
+    z-index: 5;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: 5;
+    margin-right: 1%;
+        background-color:#fff;
 }
 
+
 .hovertext {
+    width:100%;
+    height:100%;
+    padding-left: 5%;
+    padding-top: 10%;
     display: block;
-    height: 55%;
-    padding-top:45%;
-    width: 100%;
     text-decoration: none;
     z-index: 20;
     opacity: 0;
-    text-align: center;
-    font-size:1em;
+    text-align: left;
+    font-size:.85rem;
+    line-height: 1rem;
     font-weight: 400;
     color: #ff6600;    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-        background-color:#fff;
-    
-    
+    background-color: #fff;
+ 
       -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
@@ -291,7 +290,7 @@ margin:0px;
 }
 
 #ur{
-    background-image: url(ur.png);
+    background-image: url(ur.gif);
 }
 #sb{
     background-image:url(sb.gif);
@@ -313,15 +312,19 @@ a.link {
 }
 
 
+
 #connect {
     background-image:url(connect.gif);
+   
 }
 
 
 .footer {
+
     width:100%;
-    height:9%;
     padding-top:25px;
+    padding-bottom:15px;
+
     font-size:0.7em;
     text-align: center;
 }
@@ -478,10 +481,9 @@ h3{
 #content2 {
     margin-top:5%;
     padding-top:.2%;
-    padding-bottom:.5%;
+    padding-bottom:3%;
 
     background-color: #fbfbfb;
-    height: 363%;
     position:relative;
 }
 
@@ -581,14 +583,82 @@ h3{
     background-image: url(lowfi.png);
 }
 
+#cuttle1{
+    background-image: url(cuttle1.png);
+}
+#cuttle2{
+    background-image: url(cuttle2.png);
+}
+#cuttle3{
+    background-image: url(cuttle3.png);
+}
+#cuttle4{
+    background-image: url(cuttle4.png);
+}
+#cuttle5{
+    background-image: url(cuttle5.png);
+}
+#cuttle6{
+    background-image: url(cuttle6.png);
+}
+#cuttle7{
+    background-image: url(cuttle7.png);
+}
+#cuttle8{
+    background-image: url(cuttle8.png);
+}
+#cuttle9{
+    background-image: url(cuttle9.png);
+}
+#cuttle10{
+    background-image: url(cuttle10.png);
+}
+#cuttle11{
+    background-image: url(cuttle11.png);
+}
+
+#ur1{
+    background-image: url(ur1.png);
+}
+#ur2{
+    background-image: url(ur2.png);
+}
+#ur3{
+    background-image: url(ur3.png);
+}
+#ur4{
+    background-image: url(ur4.png);
+}
+#ur5{
+    background-image: url(ur5.png);
+}
+#cuttle6{
+    background-image: url(cuttle6.png);
+}
+#cuttle7{
+    background-image: url(cuttle7.png);
+}
+#cuttle8{
+    background-image: url(cuttle8.png);
+}
+#cuttle9{
+    background-image: url(cuttle9.png);
+}
+#cuttle10{
+    background-image: url(cuttle10.png);
+}
+#cuttle11{
+    background-image: url(cuttle11.png);
+}
 .log{
+    padding: 1.5%;
     margin-top:3%;
-    margin-left: 12%;
-    width:72%;
-    height:220px;
+    margin-left: 20%;
+    width:60%;
+    height:190px;
     display: flex;
     flex-direction: row; 
-    
+    background-color: #fff;
     
       -o-transition:.2s;
   -ms-transition:.2s;
@@ -598,36 +668,37 @@ h3{
 }
 
 .log:hover{
-    opacity: 0.7;
-    
+    margin-right: 1%;
+box-shadow: 3px 3px 3px #ddd;    
 }
+
 .date{
-    width:35%;
-    height:47%;
+    width:10%;
+    height:35%;
     border-right-style: solid;
    border-right-width: 5px;
-    border-color: #eee;
-    font-size: 1.5rem;
+    border-color: #ddd;
+    font-size: 1.1rem;
     font-weight: 300;
-    color: #999; 
+    color: #ccc; 
     text-align: right;
-    padding-right: 20px;
-    line-height: 2rem;
+    padding-right: 10px;
+    line-height: 1.3rem;
 }
 
 #dates{
-    font-weight: 800;
-    font-size:2.4rem;
+    font-weight: 600;
+    font-size:1.5rem;
     color:#999;
 }
 
 .log_content{
-    padding-left: 35px;
-    padding-right:20px;
+    padding-left: 30px;
+    padding-right:10px;
     width : 100%;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 300;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
     
     
 }
@@ -643,7 +714,7 @@ h3{
 
 .log_title{
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 2rem;
     color: #333; 
     
@@ -656,5 +727,5 @@ hr{
     width:60%;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
