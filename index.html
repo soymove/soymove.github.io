@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,17 +12,29 @@
     <title>Hi Soy</title>
 
     <link href="/main.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700" rel="stylesheet">
 
-
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+<script> 
+$(document).ready(function(){
+    $(".arrow").click(function(){
+        $("#hook").slideUp(1000);
+    });
+});
+</script>
+    
 </head>
 
     
 <body>
+    <div id = "hook"><div id = "hi2">A portfolio<br>is more than<br>
+        just a good look.<br>
+        </div><i class="arrow down"></i></div>
+
     <div id = header_m>
           <div class = cv>
               <a id = "cvlink" href="soyeonhwang_cv.pdf" target="_blank">Download CV</a>
@@ -31,44 +43,43 @@
             <a href="index2.html" class="link">JOURNAL</a>
         </div>
           <div class = category id="category-current">
-              <a href="index.html" class="link">HOME</a>
+              <a href="work.html" class="link">WORK</a>
         </div>
         
     </div>
-    
     <div id = "intro">
         <div id = "text">
-            <div id = "hi">I'm Soy<br>a design<br>multiplayer</div>
-            <div id = "introduction">It is awesome to be an interaction designer:<br> be visual, verbal, divergent, convergent, a traditional craftsman and tech-savvy early-adopter!<br>
-What guides this obtuse schizophrenic journey is the pleasure I find in numerous iterations.<br>
-            Please follow the trace below and meet me along the way.<br>
-                (Due to the NDA, some projects are only mentioned in the journal.)</div>
+            <div id = "hi">Soy, a design explorer</div>
+            <div id = "introduction">Design is about solving a problem in a creative way.<br> Or, it is about discovering needs. Well no, it is all about touching people's hearts.<br>
+ While I don't have an answer yet, I know this exploration will continue.<br>Imagining, experimenting with various spins, catching magic words from feedback and iterating. I cherish all the steps. Please follow the traces below and find me at some corners.
         </div>
     </div>
     <div id = content>
             <div id = reel>
                 <div class = reelc id = cuttle>
-                    <a href="cuttle.html" class="link"><div class = "hovertext">Cuttlefish<br><span id = "stext">Participatory Design<br> Prototyping<br></span><br></div></a>
+                    <a href="cuttle.html" class="link"><div class = "hovertext">Cuttlefish (2017)<br><span id = "stext">: a tool that makes retargeting ads easy<br>: webapps<br>#Sketch #Flinto<br><br>- Leading a participatory design process<br>- Designing mock-ups and prototypes</span><br></div></a>
                 </div>
                 <div class = reelc id = ur>
-                    <a href="ur.html" class="link"><div class = "hovertext">Let's Do It Right<br><span id = "stext">User Research</span><br></div></a>
+                    <a href="ur.html" class="link"><div class = "hovertext">Let's Do It Right (2017)<br><span id = "stext">: establishing the foundation of the User Research<br>: design research<br>#Contextual Inquiry #Affinity diagram #Persona<br>#Taskflow analysis<br><br>- Leading a user research design process<br>- Integrating both qualitative and quantitative design methods and formalizing the process<br>- Consolidating data into various analysis</span><br></div></a>
                 </div>
                 <div class = reelc id = sb>
-                     <a href="banner.html" class="link"><div class = "hovertext">Social Banners<br><span id = "stext">Design Research<br>Concept Desing</span><br></div></a>
+                     <a href="banner.html" class="link"><div class = "hovertext">Social Banners (2016)<br><span id = "stext">:  online ads re-invented<br>: design research, concept design<br><br>- Analyzed existing online ads from the company, the competitors, and the creative agency<br>- Designed new concepts for the next online ads</span><br></div></a>
                 </div>
                 <div class = reelc id = lpify>
-                     <a href="lpify.html" class="link"><div class = "hovertext">LPIFY<br><span id = "stext">Physical Computing</span><br></div></a>
+                     <a href="lpify.html" class="link"><div class = "hovertext">LPIFY (2015)<br><span id = "stext">: a hand-written music playlist<br>: physical computing, concept design<br>#Arduino #Storyboarding<br><br>- Designed a new way of listening and sharing music with the physical device<br>- Created a concept, sketched the look&feel, implemented software </span><br></div></a>
                 </div>
             <div class = reelc id = connect>
-                 <a href="connect.html" class="link"><div class = "hovertext">Connect<br><span id = "stext">Concept Design<br>Wearables</span><br></div></a>
+                 <a href="connect.html" class="link"><div class = "hovertext">Connect (2015) <br><span id = "stext">: an experience of thawing people out<br>: physical computing, concept design<br>
+                     #Digital artifacts #Set design<br><br>- Designed a concept for interactive performances<br>- Created the sets and wearables</span><br></div></a>
                 </div>
                 
             </div>
-     
+        </div>
         
-     <div class = "footer">
-       All contents and source codes belong to © 2017 <a href="mailto:soymove@gmail.com?Subject=Hi" target="_top"> <b>Soyeon Hwang</b></a> </div>
+   
     </div>
+      <div class = "footer">
+       All contents and source codes belong to © 2017 <a href="mailto:soymove@gmail.com?Subject=Hi" target="_top"> <b>Soyeon Hwang</b></a> </div>
     
         
 </body>
