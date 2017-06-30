@@ -475,11 +475,9 @@ a.link {
 
 #bodycontents{
     margin-top:1%;
-    width:70%;
-    display: flex;
-    flex-direction: row;
-    margin-left: 18%;
-    overflow-y:visible;
+    margin-left: 29%;
+    margin-right: 15%;
+    margin-bottom: 8%;
 }
 
 #leftnav{
@@ -507,8 +505,6 @@ a.link {
 }
 
 #maincontents{
-    margin-left:15.5%;
-    width:80%;
     font-size: .8em;
     font-weight: 400;
     line-height: 1.55em;
@@ -539,8 +535,7 @@ a.link {
 }
 
 .inimage{
-    height:15%;
-    
+    height:60vh;
     margin:3%;
     background-repeat: no-repeat;
     background-size: contain;
