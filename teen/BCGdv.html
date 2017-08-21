@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        <title>Hi Soy</title>
+
+        <link rel="stylesheet" type="text/css" href="bcgdv.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter the Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "hisoy") {
+window.open('bcgdv_main.html','_self');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('The password is incorrect. Please try again','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+    </header>
+        
+    <body>
+    
+<CENTER>
+<FORM>
+<input type="button" value="Soyeon Hwang, BCG DV Design Challenge Response" onClick="passWord()">
+</FORM>
+</CENTER>
+<div class = "preface">
+Please make sure that your browser is up-to-date before continuing.<br>         This design challegne response is created at 13 inch screen. (2560 x 1600)<br>
+        </div>
+        </body>
+</html>

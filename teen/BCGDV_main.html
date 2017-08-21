@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Hi Soy</title>
+    
+        <link rel="stylesheet" type="text/css" href="bcgdv.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    
+         
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var position = 100;
+
+    $(function(){
+            
+        $(document).click(function() {
+        $(".nav").css("color","#bbb");
+        if (position == 100){
+            $("#nav_brief").css("color","rgba(244,48,72,0.4)");
+        }
+            if (position == 200){
+            $("#nav_ir").css("color","rgba(244,48,72,0.4)");
+        }
+            if (position == 300){
+            $("#nav_dd").css("color","rgba(244,48,72,0.4)");
+        }
+            if (position == 400){
+            $("#nav_idr").css("color","rgba(244,48,72,0.4)");
+        }
+            if (position == 500){
+            $("#nav_fc").css("color","rgba(244,48,72,0.4)");
+        }
+            if (position == 600){
+            $("#nav_ih").css("color","rgba(244,48,72,0.4)");
+        }
+            if (position == 700){
+            $("#nav_ns").css("color","rgba(244,48,72,0.4)");
+        }
+            
+        });
+        
+
+    
+        $('#triangle-right').click(function(){
+            
+
+            $('.contentbox').animate({'left' : position+'vw'}, {duration: 500},
+            {easing: 'ease-in-out'}
+                                   );
+            expanded = false;
+            position += 100;
+                if (position == 700){
+                        $("#triangle-right").css("display","none");
+            }
+        }
+                                   
+      );
+        $('#nav_brief').click(function(){
+            position = 100;
+                                    $("#triangle-right").css("display","block");
+
+    
+            $('.contentbox').animate({'left' : '0vw'}, {duration: 500},
+            {easing: 'ease-in-out'}
+                                   );
+            expanded = false;
+            }               
+      );
+        
+        $('#nav_ir').click(function(){
+                position = 200;
+                                    $("#triangle-right").css("display","block");
+
+
+            $('.contentbox').animate({'left' : '100vw'}, {duration: 500},
+            {easing: 'ease-in-out'}
+                                   );
+            expanded = false;
+            }               
+      );
+      $('#nav_dd').click(function(){
+                position = 300;
+                        $("#triangle-right").css("display","block");
+
+            $('.contentbox').animate({'left' : '200vw'}, {duration: 500},
+            {easing: 'ease-in-out'}
+                                   );
+            expanded = false;
+            }               
+      );
+      $('#nav_idr').click(function(){
+                position = 400;
+                        $("#triangle-right").css("display","block");
+
+            $('.contentbox').animate({'left' : '300vw'}, {duration: 500},
+            {easing: 'ease-in-out'}
+                                   );
+            expanded = false;
+            }               
+      );
+      $('#nav_fc').click(function(){
+                position = 500;
+                                  $("#triangle-right").css("display","block");
+
+
+            $('.contentbox').animate({'left' : '400vw'}, {duration: 500},
+            {easing: 'ease-in-out'}
+                                   );
+            expanded = false;
+            }               
+      );
+        $('#nav_ih').click(function(){
+                position = 600;
+                          $("#triangle-right").css("display","block");
+
+
+            $('.contentbox').animate({'left' : '500vw'}, {duration: 500},
+            {easing: 'ease-in-out'}
+                                   );
+            expanded = false;
+            }               
+      );
+        
+      $('#nav_ns').click(function(){
+                position = 700;
+                          $("#triangle-right").css("display","none");
+
+
+            $('.contentbox').animate({'left' : '600vw'}, {duration: 500},
+            {easing: 'ease-in-out'}
+                                   );
+            expanded = false;
+            }               
+      );
+        
+        
+        
+        
+        
+  });
+    </script>
+    
+</head>
+<body>
+    <div id = "triangle-right"> </div>
+    <div id = "copyright">BCG DV Design Challenge Response © 2017 Soyeon Hwang ALL RIGHTS RESERVED</div>
+    <div class = "menu">
+    <ul>
+        <li><div class = "nav" id="nav_brief">Brief</div></li>
+        
+        <li><div class = "nav" id="nav_ir" >Initial Research</div></li>
+        <li><div class = "nav"  id="nav_dd" >Design Direction</div></li>
+        <li><div class = "nav"  id="nav_idr" >Ideation/ Research</div></li>
+        <li><div class = "nav"  id="nav_fc" >Final Concept</div></li>
+        <li><div class = "nav"  id="nav_ih" >Interaction Highlights</div></li>
+
+        <li><div class = "nav"  id="nav_ns" >Next steps</div></li>
+
+    </ul>
+    </div>
+    
+    
+    <div class = "contentbox">
+        <div class = "content" id = "brief">
+        <p>
+        <h1>Brief :</h1>
+        <h2><b>
+        Banks today are afraid that today's teenagers will not use their services in the future. Develop a service that is relevant to a teen's needs today, maintains a connection to banking, and has the potential to spread virally.</b>
+        </h2>
+        <br>
+            
+        <p>
+        My initial question was simple:<br>
+        "Did I use bank 10 years ago?"<br>
+        "Not much."<br>
+        "Do I use bank now then?"<br>
+        "Yes"<br>
+        "Why?"<br>
+        "To get paid at the company and use credit card. I hate carrying cash."<br>
+        And I soon realized that I myself am not making full use of the bank service. Those basic withdrawing service can be easily replaced; for example, if the cryptocurrency becomes more widespread, the blockchain-based transaction that is much faster and more efficient can replace the existing bank transaction.<br>
+            </p>
+            <h2>
+        I decided to start on the initial research on what other services banks offer.</h2>
+        </div>
+        
+        
+        
+        <div class = "content" id = "ir">
+        <h1>Initial Research :</h1>
+        <h2>
+        <ul class = "contents_ul">
+        <li>The most frequent word that can be found in the bank website is <b>Investment</b> and <b>Asset management.</b></li>
+        <li>There is rarely a service for teens. There are customer-oriented services such as retiremnt planning or college planning for kids, but <b>no service that teens can directly participate in.</b></li>
+        <li>Existing APP on teen's finance focuses on keeping track of the spending.</li>
+            <li>Experts emphasize that it is critical to <b>learn healthy financial habits</b> in the early age.</li>
+            </ul>
+            </h2>
+        <p>
+            What I found interesting was <b>while banks highlight the asset investment or long-term assemt management, it is hard to find a service that helps teens see the money in long-term.</b> </p>
+            
+            <p>It is understandable for teens usually do not have a huge sum of income nor a regular income. However, isn't the long-term asset managment a core learning that teens should have? Instead of just focusing on keeping track of teen's weekly spending, can we teach them how to plan a month-ahead or even a year-ahead with their money?</p>
+            
+            <h2>
+        I decided to focus on designing a "retirement planning" like service for teens. </h2> 
+            
+        </div>
+        
+        
+        <div class = "content" id = "dd">
+<h1>Design Direction</h1>
+        <h2>
+        <ul class = "contents_ul">
+        <li>Design a service that help teens <b>plan money in a long-term</b> and learn to delay gratification in financial terms</li>
+        <li>Motivate teens to withhold the money for a pre-set goal and do not get distracted by daily traps</li>
+        <li><b>Inspire teens to dream wilder and do more through a healthy financial habit</b></li>
+            </ul>
+            </h2>
+               </div>
+        
+        
+        
+        
+        
+        <div class = "content" id = "idr">
+  <h1>Ideation/ Research : </h1>
+        <h2>
+        <li>What about supporting teens in their <b>Gap year</b> planning?</li>
+        </h2>
+        <p>
+        The first thing that came to my mind when thinking of long-term planning for teen was the Gap Year. There are many ways to spend the Gap year time but <b>traveling</b> is definitely one of the most popular ones. Traveling is a great way to explore the world and learn about <b>who you are(the ultimate quest of the teenager years)</b> while <b>having fun(the highest priority of the teenager years)</b> and <b>being cool(the essence of the teenager years)."</b> </p>
+        <p>I personally had a backpacking trip during the gap year with friends and met lots of other groups of teenagers who were doing the exact same thing. We and they all planned ahead, took some part-time job, and saved some money for the trip. It would be great if there is a service that helps teens figure out what kinds of Gap year to plan, set the goal that fits them the most, and guide what to do to achieve that goal financially and also in many other ways. </p>
+        <p>
+            Yet, while discussing this idea in-depth with a friend, one weakness of this service has been identifed: the Gap-year planner service is too one-o-one based. Yes, individual teens will get the customized help and learn about the long-term financial planning but how can this service be spread out? In what ways this service can go <b>viral?</b>
+            </p>
+            <h2><li>Teens are eager to <b>break their shells and discover themsleves</b> but at the same time, they are very keen on <b>peer</b>'s action and opinions.</li></h2>
+            <p>Many people that I met during the gap year travel were traveling in a group. Especially as they were younger or travelling in more adventurous areas, they tend to be more collective. I also realized that the collective actions made the planning part really fun as well. It does help you stay on focused, stay movitaved.</p>
+            <p>Does it have to be a Gap year though? While a gap year planning is a good use case of this collective financial planning, there could be various scenarioes that teens could benefit from this peer support. If so, what about designing a social financial planning platform?</p>
+        
+            
+        
+        <h2>
+        I decided to design a <b>peer-focused platform that helps teen's financial long-term planning.</b></h2>        </div>
+        
+        
+        
+        
+        
+        
+        <div class = "content" id = "fc">
+        <div class = "img_fw" id = "img_c">
+            </div><center>
+<a href = "full.png" target="_blank">Download fullsize mockup</a> </center>
+            
+  <h1>Final Concept : </h1>
+        <h2>
+            <li>COMM'ON is the ONLY <b>PLATFORM</b> where <b>users can create, share,invite, join and browse long-term financial goals.</b> </li>
+            <li>COMM'ON is the ONLY APP where <b>customized long-term financial goals can be managed and tracked</b> through quick-and-easy interaction.</li>
+
+                    <li>It <b>synchs with the bank account real-time</b> and fascilitates transferring money from checking account to the saving account.</li>
+        <li>It divides the long term financial goal into a weekly goal and <b>helps users conquer their goals by little stpes.</b></li>
+            <li>It helps users create the financial goals and invite / share with others. Likewise, users can also join / browse financial goals created by others.</li>
+            <li>It <b>updates users about the progress of others</b> who have the same financial goal.</li>
+            <li>It provides <b>a communication channel amongst users who share the same financial goals.</b>
+            </li>
+            <li>It keeps track of the invidiaul's pace in a <b>visual</b> way.</li></h2>
+            <br>
+            <h1>Strength :</h1>
+        <h2><li><b>Peer-pressure to achieve a financial goal</b> </li></h2>
+        <p>
+            In COMM'ON, each financial goal is closely tied to the social group.<b>There are many researches in Psychology proving how "telling your goals to others" raise the chance of the goal being realized.</b> Even a simple telling of the goals give a peer pressure to live up to it and brings more success than keeping it to yourself. In COMM'ON, users not only tell the goal but are grouped with people who agreed to accomplish the goal which fosters the peer-pressure. How other members in the group is "stacking" or saving up the money is communicated rel-time to the rest of the member strenghtening an implicit peer pressure. </p>
+    
+         <h2><li><b>Social interaction to keep on moving</b> 
+             </li></h2>
+        <p>Each financial goal has a dedicated communication space, which allows all the members to <b>freely discuss and share related topics.</b> Often times, the goals, especially long-term goals, are forgotten and neglected. This communication channels empowers all the members to <b>remind each other and trobule shoots a related-issue</b> to achieve the goal. 
+        </p>    
+            <br>
+            
+    </div>
+        
+        <div class = "content" id = "ih">
+            <h1>Interaction Highlights:</h1><br>
+              <div class ="img_mid" id = "f1">
+            </div> 
+            
+                  <h2><b>Quick and efficient drag-and-drop landing page</b>
+</h2>
+            <div class ="img_mid" id = "f2">
+            </div> 
+            <h2><b>Focus on Bite-size goals</b></h2>
+                  <div class ="img_mid" id = "f3">
+            </div> 
+            <h2><b>A touch of gaming</b></h2>
+                  <div class ="img_mid" id = "f4">
+            </div> 
+            <h2><b>Full support for social interactions</b></h2>
+            
+                  <div class ="img_mid" id = "f5">
+            </div> 
+        <h2><b>Positivity</b></h2>
+         
+            
+ 
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class = "content" id = "ns">
+        Next steps
+        </div>
+        
+    </div>        
+
+</body>
+</html>
