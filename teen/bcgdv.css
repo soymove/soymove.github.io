@@ -116,7 +116,8 @@ ul {
     line-height:1.6rem;
     color:#333;
     background-color: #fff;
-    overflow-y: scroll;
+    overflow-y:visible;
+    overflow-x:hidden;
 }
 
 h1{
